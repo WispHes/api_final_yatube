@@ -9,7 +9,6 @@ git clone https://github.com/WispHes/api_final_yatube.git
 - Установите виртуальное окружение c версии Python 3.7 :
 ```bash
 py -3.7 -m venv venv
-venv/Scripts/activate
 ```
 - Активируйте виртуальное окружение :
 ```bash
