@@ -25,6 +25,7 @@ class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         fields = '__all__'
         model = Comment
+        read_only_fields = ('post',)
 
 
 class FollowSerializer(serializers.ModelSerializer):
@@ -47,6 +48,7 @@ class FollowSerializer(serializers.ModelSerializer):
                 ('user', 'following'),
             ),
         ]
+        read_only_fields = ('user',)
 
     def validate(self, data):
         if data['user'] == data['following']:
